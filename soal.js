@@ -58,6 +58,7 @@ function tampilkanSoal(){
 
     for(let i=0;i<bankSoal.length;i++){
 
+        let pilih = localStorage.getItem("jawaban_" + i);
         let gambar="";
 
         if(bankSoal[i].gambar){
@@ -92,8 +93,8 @@ function tampilkanSoal(){
                <input
                     type="radio"
                     name="soal${i}"
-                    value="0"
-                    ${pilih=="0"?"checked":""}
+                    value="1"
+                    ${pilih=="1"?"checked":""}
                     onchange="simpanJawaban(${i},1)">
                 ${bankSoal[i].pilihan[1]}
             </label><br>
@@ -102,8 +103,8 @@ function tampilkanSoal(){
                 <input
                     type="radio"
                     name="soal${i}"
-                    value="0"
-                    ${pilih=="0"?"checked":""}
+                    value="2"
+                    ${pilih=="2"?"checked":""}
                     onchange="simpanJawaban(${i},2)">
                 ${bankSoal[i].pilihan[2]}
             </label><br>
@@ -112,8 +113,8 @@ function tampilkanSoal(){
                 <input
                     type="radio"
                     name="soal${i}"
-                    value="0"
-                    ${pilih=="0"?"checked":""}
+                    value="3"
+                    ${pilih=="3"?"checked":""}
                     onchange="simpanJawaban(${i},3)">
                 ${bankSoal[i].pilihan[3]}
             </label><br>
@@ -122,8 +123,8 @@ function tampilkanSoal(){
                 <input
                     type="radio"
                     name="soal${i}"
-                    value="0"
-                    ${pilih=="0"?"checked":""}
+                    value="4"
+                    ${pilih=="4"?"checked":""}
                     onchange="simpanJawaban(${i},4)">
                 ${bankSoal[i].pilihan[4]}
             </label>
