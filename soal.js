@@ -89,12 +89,12 @@ function tampilkanSoal(){
             </label><br>
 
             <label>
-                <input type="radio" name="soal${i}" value="2">
+                <input type="radio" name="soal${i}" value="3">
                 ${bankSoal[i].pilihan[3]}
             </label><br>
 
             <label>
-                <input type="radio" name="soal${i}" value="3">
+                <input type="radio" name="soal${i}" value="4">
                 ${bankSoal[i].pilihan[4]}
             </label>
 
