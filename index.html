@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TEM UNIK</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<div id="loading_mulai" style="
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(255,255,255,0.8);
+z-index:9999;
+justify-content:center;
+align-items:center;
+font-size:22px;
+font-weight:bold;
+">
+    ⏳ Memeriksa data peserta...
+</div>
+
+<<div id="nim_sama" class="modal">
+
+    <div class="modal-content">
+
+        <h3>Anda sudah mengerjakan evaluasi ini!</h3>
+
+        <button onclick="kembali()">OK</button>
+
+    </div>
+
+</div>
+
+<body>
+
+<div class="container">
+
+    <div class="judul">
+    <h1>EVALUASI PRAKTIKUM</h1>
+
+    <h1>BAHASA PEMROGRAMAN</h1>
+
+    <h2>Teknologi Elektro-Medis</h2>
+    <h2>FT UNIK</h2>
+
+    </div>
+    <hr>
+
+    <label>Nama</label>
+
+    <input type="text" id="nama">
+
+    <label>NIM</label>
+
+    <input type="text" id="nim">
+
+    <hr>
+
+    <p>Durasi Ujian</p>
+
+    <h3>25 Menit</h3>
+
+    <p>Sisa Waktu</p>
+
+    <h2>25:00</h2>
+
+    <p>(Belum Dimulai)</p>
+
+    <button onclick="mulaiUjian()">
+    Mulai
+    </button>
+<script src="script.js"></script>
+</div>
+
+</body>
+
+</html>

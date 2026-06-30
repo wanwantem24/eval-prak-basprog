@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Soal</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<div id="loading_selesai" style="
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(255,255,255,0.8);
+z-index:9999;
+justify-content:center;
+align-items:center;
+font-size:22px;
+font-weight:bold;
+">
+    ⏳ Mengirim Jawaban...
+</div>
+
+<div id="loading_soal" style="
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(255,255,255,0.8);
+z-index:9999;
+justify-content:center;
+align-items:center;
+font-size:22px;
+font-weight:bold;
+">
+    ⏳ Memuat Soal...
+</div>
+
+<div id="modalKonfirmasi" class="modal">
+
+    <div class="modal-content">
+
+        <h3>Apakah Anda yakin ingin mengirim jawaban?</h3>
+
+        <p>
+            Anda hanya bisa mengerjakan evaluasi satu kali saja<br><br>
+            Setelah dikirim, jawaban tidak dapat diubah lagi.
+        </p>
+
+        <button onclick="batalKirim()">Batal</button>
+
+        <button onclick="koreksi()">Kirim Jawaban</button>
+
+    </div>
+
+</div>
+
+<body>
+
+<div class="container">
+<div class="header">
+    <h3 id="namaMahasiswa"></h3>
+
+    <h3 id="timer"></h3>
+</div>
+
+<hr>
+
+<div id="tempatSoal">
+
+</div>
+<label>Berapa persen kontribusi anda?</label>
+
+<input type="text" id="kontribusi">
+
+<label>Siapa anggota kelompok yang paling berkontribusi?</label>
+
+<input type="text" id="kontri_anggota">
+
+<label>Siapa anggota kelompok yang paling tidak berkontribusi?</label>
+
+<input type="text" id="nokontri_anggota">
+
+<button onclick="konfirmasiKirim()">Kirim Jawaban</button>
+</div>
+<script src="banksoal.js"></script>
+<script src="soal.js"></script>
+
+</body>
+
+</html>
