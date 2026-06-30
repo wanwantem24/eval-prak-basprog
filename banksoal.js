@@ -196,7 +196,7 @@ const bankSoal = [
     {
         pertanyaan: "Dibawah ini merupakan flowchart dari",
 
-        gambar: "fch_for.jpg",
+        gambar: "fch_for.JPG",
 
         pilihan: [
             "program if",
@@ -212,7 +212,7 @@ const bankSoal = [
     {
         pertanyaan: "Perhatikan program dibawah ini. apabila saya memasukan nilai 1, apa yang terjadi?",
 
-        gambar: "pro_if.jpg",
+        gambar: "pro_if.JPG",
 
         pilihan: [
             "akan muncul tulisan 'aku'",
@@ -228,7 +228,7 @@ const bankSoal = [
     {
         pertanyaan: "Perhatikan program dibawah ini. apabila saya memasukan nilai 1, apa yang terjadi?",
 
-        gambar: "pro_els_ if.jpg",
+        gambar: "pro_els_ if.JPG",
 
         pilihan: [
             "akan muncul tulisan 'aku'",
@@ -260,7 +260,7 @@ const bankSoal = [
     {
         pertanyaan: "Dibawahan merupakan program Array berapa dimensi?",
 
-        gambar: "array_1d.jpg",
+        gambar: "array_1d.JPG",
 
         pilihan: [
             "1 dimensi",
