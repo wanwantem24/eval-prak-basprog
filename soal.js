@@ -44,6 +44,11 @@ function mulaiTimer(){
         menit + ":" + detik;
 
     },1000);
+}
+
+function simpanJawaban(nomor, jawaban){
+
+    localStorage.setItem("jawaban_" + nomor, jawaban);
 
 }
 
@@ -74,27 +79,52 @@ function tampilkanSoal(){
             ${gambar}
 
             <label>
-                <input type="radio" name="soal${i}" value="0">
+                <input
+                    type="radio"
+                    name="soal${i}"
+                    value="0"
+                    ${pilih=="0"?"checked":""}
+                    onchange="simpanJawaban(${i},0)">
                 ${bankSoal[i].pilihan[0]}
             </label><br>
 
             <label>
-                <input type="radio" name="soal${i}" value="1">
+               <input
+                    type="radio"
+                    name="soal${i}"
+                    value="0"
+                    ${pilih=="0"?"checked":""}
+                    onchange="simpanJawaban(${i},1)">
                 ${bankSoal[i].pilihan[1]}
             </label><br>
 
             <label>
-                <input type="radio" name="soal${i}" value="2">
+                <input
+                    type="radio"
+                    name="soal${i}"
+                    value="0"
+                    ${pilih=="0"?"checked":""}
+                    onchange="simpanJawaban(${i},2)">
                 ${bankSoal[i].pilihan[2]}
             </label><br>
 
             <label>
-                <input type="radio" name="soal${i}" value="3">
+                <input
+                    type="radio"
+                    name="soal${i}"
+                    value="0"
+                    ${pilih=="0"?"checked":""}
+                    onchange="simpanJawaban(${i},3)">
                 ${bankSoal[i].pilihan[3]}
             </label><br>
 
             <label>
-                <input type="radio" name="soal${i}" value="4">
+                <input
+                    type="radio"
+                    name="soal${i}"
+                    value="0"
+                    ${pilih=="0"?"checked":""}
+                    onchange="simpanJawaban(${i},4)">
                 ${bankSoal[i].pilihan[4]}
             </label>
 
@@ -180,6 +210,11 @@ async function koreksi(){
     document.getElementById("loading_selesai").style.display = "none";
 
     localStorage.setItem("statusUjian", "selesai");
+    for(let i=0;i<bankSoal.length;i++){
+
+    localStorage.removeItem("jawaban_" + i);
+
+    }
     window.location.href = "hasil.html";
 
 }
